@@ -1,0 +1,5 @@
+2025-06-14 00:03:06,281 - INFO - Using latest cleaned file: hp_products_cleaned_20250613_230048.csv
+2025-06-14 00:03:06,285 - INFO - Successfully loaded data from hp_products_cleaned_20250613_230048.csv
+2025-06-14 00:03:06,285 - INFO - Starting data enrichment...
+2025-06-14 00:03:06,289 - INFO - Data enrichment completed.
+2025-06-14 00:03:06,290 - INFO - Successfully saved enriched data to hp_products_enriched_20250613_230048.csv

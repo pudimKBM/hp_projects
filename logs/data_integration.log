@@ -1,0 +1,5 @@
+2025-06-14 01:28:54,528 - INFO - Loaded Mercado Livre data from hp_products_demo_20250613_230048.csv
+2025-06-14 01:28:54,529 - INFO - Loaded Americanas data from hp_products_americanas_mock_20250614_012826.csv
+2025-06-14 01:28:54,531 - INFO - Combined dataframes successfully. Total rows: 10
+2025-06-14 01:28:54,532 - INFO - Deduplicated data. Remaining rows: 10
+2025-06-14 01:28:54,533 - INFO - Combined data saved to ./hp_products_combined_20250614_012854.csv

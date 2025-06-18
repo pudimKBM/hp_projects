@@ -1,0 +1,32 @@
+2025-06-17 14:26:14,163 - INFO - Data loaded successfully from hp_products_structured_dataset_20250615_233410.csv
+2025-06-17 14:26:14,163 - INFO - Starting EDA on structured dataset.
+2025-06-17 14:26:20,269 - INFO - Price distribution plot saved.
+2025-06-17 14:26:20,442 - INFO - Correlation matrix plot saved.
+2025-06-17 14:26:20,442 - INFO - 
+--- Potenciais Features Úteis para Modelagem ---
+2025-06-17 14:26:20,442 - INFO - Features from heuristic labeling: seller_name, price_numeric, rating_numeric, reviews_count, is_original, is_xl, product_type, has_sealed_info, has_invoice_info, has_warranty_info.
+2025-06-17 14:26:20,442 - INFO - Textual features (for NLP): title, description.
+2025-06-17 14:26:20,442 - INFO - Potential interaction: price_numeric * rating_numeric (e.g., value for money).
+2025-06-17 14:26:20,442 - INFO - Categorical feature for one-hot encoding: platform.
+2025-06-17 14:26:20,443 - INFO - Categorical feature for one-hot encoding: product_type.
+2025-06-17 14:26:20,443 - INFO - --------------------------------------------------
+2025-06-17 14:26:20,444 - INFO - Data loaded successfully from hp_products_labeled_20250615_233023.csv
+2025-06-17 14:26:20,444 - INFO - Starting EDA on labeled dataset for text analysis and label distribution.
+2025-06-17 14:26:20,742 - INFO - Word cloud for titles saved.
+2025-06-17 14:26:21,130 - INFO - Word cloud for descriptions saved.
+2025-06-17 14:37:24,474 - INFO - Data loaded successfully from hp_products_structured_dataset_20250615_233410.csv
+2025-06-17 14:37:24,475 - INFO - Starting EDA on structured dataset.
+2025-06-17 14:37:25,024 - INFO - Price distribution plot saved.
+2025-06-17 14:37:25,215 - INFO - Correlation matrix plot saved.
+2025-06-17 14:37:25,215 - INFO - 
+--- Potenciais Features Úteis para Modelagem ---
+2025-06-17 14:37:25,215 - INFO - Features from heuristic labeling: seller_name, price_numeric, rating_numeric, reviews_count, is_original, is_xl, product_type, has_sealed_info, has_invoice_info, has_warranty_info.
+2025-06-17 14:37:25,215 - INFO - Textual features (for NLP): title, description.
+2025-06-17 14:37:25,215 - INFO - Potential interaction: price_numeric * rating_numeric (e.g., value for money).
+2025-06-17 14:37:25,216 - INFO - Categorical feature for one-hot encoding: platform.
+2025-06-17 14:37:25,216 - INFO - Categorical feature for one-hot encoding: product_type.
+2025-06-17 14:37:25,216 - INFO - --------------------------------------------------
+2025-06-17 14:37:25,218 - INFO - Data loaded successfully from hp_products_labeled_20250615_233023.csv
+2025-06-17 14:37:25,218 - INFO - Starting EDA on labeled dataset for text analysis and label distribution.
+2025-06-17 14:37:25,534 - INFO - Word cloud for titles saved.
+2025-06-17 14:37:25,950 - INFO - Word cloud for descriptions saved.

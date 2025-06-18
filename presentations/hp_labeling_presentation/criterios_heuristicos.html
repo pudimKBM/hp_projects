@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+      .slide-container {
+        width: 1280px; 
+        min-height: 720px; 
+        background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide-container p-12">
+      <div class="mb-8">
+        <h1 class="text-4xl font-bold text-gray-800 mb-4">Critérios Heurísticos</h1>
+        <div class="w-20 h-1 bg-blue-600 rounded"></div>
+      </div>
+      
+      <div class="grid grid-cols-2 gap-8">
+        <!-- Original Products -->
+        <div class="bg-white rounded-xl shadow-lg p-6">
+          <div class="flex items-center mb-6">
+            <div class="bg-green-100 rounded-full p-3 mr-4">
+              <i class="fas fa-check-circle text-green-600 text-xl"></i>
+            </div>
+            <h2 class="text-2xl font-bold text-green-800">Produtos Originais</h2>
+          </div>
+          
+          <div class="space-y-4">
+            <div class="bg-green-50 rounded-lg p-4">
+              <h4 class="font-semibold text-green-800 mb-2">Vendedores Oficiais</h4>
+              <p class="text-sm text-green-700">Lojas com nomes como "HP Oficial", "Loja Oficial HP", "HP Store"</p>
+            </div>
+            
+            <div class="bg-green-50 rounded-lg p-4">
+              <h4 class="font-semibold text-green-800 mb-2">Palavras-chave de Autenticidade</h4>
+              <p class="text-sm text-green-700">"Original", "Genuíno", "Autêntico", "Lacrado", "Nota Fiscal"</p>
+            </div>
+            
+            <div class="bg-green-50 rounded-lg p-4">
+              <h4 class="font-semibold text-green-800 mb-2">Faixa de Preço</h4>
+              <p class="text-sm text-green-700">Preços acima de R$ 200 (indicativo de bundles ou produtos premium)</p>
+            </div>
+            
+            <div class="bg-green-50 rounded-lg p-4">
+              <h4 class="font-semibold text-green-800 mb-2">Confiança</h4>
+              <p class="text-sm text-green-700">Score de 0.3 a 1.0 baseado na combinação de critérios</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Suspicious Products -->
+        <div class="bg-white rounded-xl shadow-lg p-6">
+          <div class="flex items-center mb-6">
+            <div class="bg-red-100 rounded-full p-3 mr-4">
+              <i class="fas fa-exclamation-triangle text-red-600 text-xl"></i>
+            </div>
+            <h2 class="text-2xl font-bold text-red-800">Produtos Suspeitos</h2>
+          </div>
+          
+          <div class="space-y-4">
+            <div class="bg-red-50 rounded-lg p-4">
+              <h4 class="font-semibold text-red-800 mb-2">Palavras-chave Suspeitas</h4>
+              <p class="text-sm text-red-700">"Compatível", "Similar", "Genérico", "Remanufaturado", "Alternativo"</p>
+            </div>
+            
+            <div class="bg-red-50 rounded-lg p-4">
+              <h4 class="font-semibold text-red-800 mb-2">Preços Baixos</h4>
+              <p class="text-sm text-red-700">Valores abaixo de R$ 30 (suspeita de falsificação)</p>
+            </div>
+            
+            <div class="bg-red-50 rounded-lg p-4">
+              <h4 class="font-semibold text-red-800 mb-2">Avaliações Inconsistentes</h4>
+              <p class="text-sm text-red-700">Rating baixo (&lt; 3.0) com muitas avaliações (&gt; 50)</p>
+            </div>
+            
+            <div class="bg-red-50 rounded-lg p-4">
+              <h4 class="font-semibold text-red-800 mb-2">Vendedores Genéricos</h4>
+              <p class="text-sm text-red-700">Nomes como "Eletrônicos XYZ", "Distribuidora ABC"</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Algorithm Logic -->
+      <div class="mt-8 bg-blue-50 rounded-xl p-6">
+        <h3 class="text-lg font-semibold text-blue-800 mb-4">Lógica do Algoritmo</h3>
+        <div class="grid grid-cols-3 gap-6 text-center">
+          <div class="bg-white rounded-lg p-4">
+            <i class="fas fa-search text-blue-600 text-2xl mb-2"></i>
+            <div class="text-sm font-medium text-gray-800">Análise de Texto</div>
+            <div class="text-xs text-gray-600">Busca por palavras-chave específicas</div>
+          </div>
+          <div class="bg-white rounded-lg p-4">
+            <i class="fas fa-calculator text-blue-600 text-2xl mb-2"></i>
+            <div class="text-sm font-medium text-gray-800">Score de Confiança</div>
+            <div class="text-xs text-gray-600">Soma ponderada dos critérios</div>
+          </div>
+          <div class="bg-white rounded-lg p-4">
+            <i class="fas fa-tags text-blue-600 text-2xl mb-2"></i>
+            <div class="text-sm font-medium text-gray-800">Rotulagem Final</div>
+            <div class="text-xs text-gray-600">Classificação binária baseada no score</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

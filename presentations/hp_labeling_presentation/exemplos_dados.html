@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+      .slide-container {
+        width: 1280px; 
+        min-height: 720px; 
+        background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide-container p-8">
+      <div class="mb-6">
+        <h1 class="text-3xl font-bold text-gray-800 mb-3">Exemplos de Dados</h1>
+        <div class="w-20 h-1 bg-blue-600 rounded"></div>
+      </div>
+      
+      <div class="grid grid-rows-5 gap-3 min-h-[500px]">
+        <!-- Example 1 - Original -->
+        <div class="bg-white rounded-lg shadow-md p-4 border-l-4 border-green-500">
+          <div class="flex items-center justify-between mb-2">
+            <div class="flex items-center">
+              <div class="bg-green-100 rounded-full p-1 mr-2">
+                <i class="fas fa-check text-green-600 text-sm"></i>
+              </div>
+              <span class="font-bold text-green-800 text-sm">ORIGINAL</span>
+            </div>
+            <span class="text-xs text-gray-500">Confiança: 0.3</span>
+          </div>
+          <div class="grid grid-cols-4 gap-3 text-xs">
+            <div><strong>Título:</strong> Cartucho HP 664 Colorido Original</div>
+            <div><strong>Preço:</strong> R$ 167,79</div>
+            <div><strong>Vendedor:</strong> Tec Print</div>
+            <div><strong>Rating:</strong> 3.5 (4 avaliações)</div>
+          </div>
+        </div>
+        
+        <!-- Example 2 - Suspicious -->
+        <div class="bg-white rounded-lg shadow-md p-4 border-l-4 border-red-500">
+          <div class="flex items-center justify-between mb-2">
+            <div class="flex items-center">
+              <div class="bg-red-100 rounded-full p-1 mr-2">
+                <i class="fas fa-exclamation-triangle text-red-600 text-sm"></i>
+              </div>
+              <span class="font-bold text-red-800 text-sm">SUSPEITO</span>
+            </div>
+            <span class="text-xs text-gray-500">Confiança: 0.4</span>
+          </div>
+          <div class="grid grid-cols-4 gap-3 text-xs">
+            <div><strong>Título:</strong> Cartucho De Tinta Hp 664 Negro y 664 Tricolor</div>
+            <div><strong>Preço:</strong> R$ 153,10</div>
+            <div><strong>Vendedor:</strong> Eshop</div>
+            <div><strong>Rating:</strong> 4.6 (307 avaliações)</div>
+          </div>
+        </div>
+        
+        <!-- Example 3 - Mixed Signals -->
+        <div class="bg-white rounded-lg shadow-md p-4 border-l-4 border-yellow-500">
+          <div class="flex items-center justify-between mb-2">
+            <div class="flex items-center">
+              <div class="bg-yellow-100 rounded-full p-1 mr-2">
+                <i class="fas fa-question text-yellow-600 text-sm"></i>
+              </div>
+              <span class="font-bold text-yellow-800 text-sm">SINAIS MISTOS</span>
+            </div>
+            <span class="text-xs text-gray-500">Confiança: 0.5</span>
+          </div>
+          <div class="grid grid-cols-4 gap-3 text-xs">
+            <div><strong>Título:</strong> Kit 3 Cartuchos Hp 664 Preto + Colorido</div>
+            <div><strong>Preço:</strong> R$ 242,49</div>
+            <div><strong>Vendedor:</strong> Loja Oficial HP</div>
+            <div><strong>Rating:</strong> 4.8 (29 avaliações)</div>
+          </div>
+        </div>
+        
+        <!-- Example 4 - Original -->
+        <div class="bg-white rounded-lg shadow-md p-4 border-l-4 border-green-500">
+          <div class="flex items-center justify-between mb-2">
+            <div class="flex items-center">
+              <div class="bg-green-100 rounded-full p-1 mr-2">
+                <i class="fas fa-check text-green-600 text-sm"></i>
+              </div>
+              <span class="font-bold text-green-800 text-sm">ORIGINAL</span>
+            </div>
+            <span class="text-xs text-gray-500">Confiança: 0.3</span>
+          </div>
+          <div class="grid grid-cols-4 gap-3 text-xs">
+            <div><strong>Título:</strong> Cartucho HP 664 Preto Original Americanas</div>
+            <div><strong>Preço:</strong> R$ 125,48</div>
+            <div><strong>Vendedor:</strong> Loja Americanas 3</div>
+            <div><strong>Rating:</strong> 4.6 (165 avaliações)</div>
+          </div>
+        </div>
+        
+        <!-- Example 5 - Unknown -->
+        <div class="bg-white rounded-lg shadow-md p-4 border-l-4 border-gray-400">
+          <div class="flex items-center justify-between mb-2">
+            <div class="flex items-center">
+              <div class="bg-gray-100 rounded-full p-1 mr-2">
+                <i class="fas fa-question-circle text-gray-600 text-sm"></i>
+              </div>
+              <span class="font-bold text-gray-800 text-sm">DESCONHECIDO</span>
+            </div>
+            <span class="text-xs text-gray-500">Confiança: 0.0</span>
+          </div>
+          <div class="grid grid-cols-4 gap-3 text-xs">
+            <div><strong>Título:</strong> Cartucho de tinta preta HP Advantage 664</div>
+            <div><strong>Preço:</strong> R$ 66,90</div>
+            <div><strong>Vendedor:</strong> OBERO INFORMATICA</div>
+            <div><strong>Rating:</strong> 4.7 (3317 avaliações)</div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Summary -->
+      <div class="mt-6 bg-blue-50 rounded-lg p-4">
+        <h3 class="text-lg font-semibold text-blue-800 mb-3">Distribuição dos Rótulos</h3>
+        <div class="grid grid-cols-4 gap-4 text-center">
+          <div>
+            <div class="text-xl font-bold text-green-600">50%</div>
+            <div class="text-sm text-green-800">Originais</div>
+          </div>
+          <div>
+            <div class="text-xl font-bold text-red-600">10%</div>
+            <div class="text-sm text-red-800">Suspeitos</div>
+          </div>
+          <div>
+            <div class="text-xl font-bold text-yellow-600">20%</div>
+            <div class="text-sm text-yellow-800">Sinais Mistos</div>
+          </div>
+          <div>
+            <div class="text-xl font-bold text-gray-600">20%</div>
+            <div class="text-sm text-gray-800">Desconhecidos</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

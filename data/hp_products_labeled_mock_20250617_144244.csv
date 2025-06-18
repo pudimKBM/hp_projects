@@ -1,0 +1,51 @@
+title,description,price_numeric,seller_name,rating_numeric,reviews_count,platform,product_type,label,is_original,is_xl,has_sealed_info,has_invoice_info,has_warranty_info,confidence,target_is_original
+Cartucho HP 122 Colorido Original,Cartucho 0 compatível com sua impressora.,221.57,Distribuidora ABC,3.2,220,Americanas,Toner,original,True,False,True,False,True,0.32,0
+Cartucho HP 901 Colorido Original,Descrição detalhada do cartucho 1. Alta qualidade e rendimento.,93.22,HP Oficial,3.9,368,Mercado Livre,Cartucho,desconhecido,True,False,True,True,True,0.47,0
+Cartucho HP 901 Preto Original,Descrição detalhada do cartucho 2. Alta qualidade e rendimento.,214.74,Tec Print,2.6,319,Americanas,Kit Tinta,original,False,True,False,True,False,0.59,1
+Cartucho HP 664 Colorido Original,Cartucho 3 compatível com sua impressora.,186.93,HP Oficial,5.0,448,Americanas,Toner,sinais_mistos,True,True,False,True,True,0.97,1
+Cartucho HP 664 Colorido Original,Descrição detalhada do cartucho 4. Alta qualidade e rendimento.,148.16,Distribuidora ABC,2.9,257,Mercado Livre,Toner,desconhecido,True,True,False,True,False,0.26,1
+Cartucho HP 122 Colorido Original,Descrição detalhada do cartucho 5. Alta qualidade e rendimento.,265.51,HP Oficial,4.9,278,Americanas,Cartucho,original,False,False,True,True,False,0.34,1
+Cartucho HP 664 Kit Original,Descrição detalhada do cartucho 6. Alta qualidade e rendimento.,194.58,Tec Print,3.0,382,Americanas,Kit Tinta,suspeito,True,True,True,True,False,0.35,0
+Cartucho HP 122 Colorido Original,Cartucho 7 compatível com sua impressora.,38.95,Distribuidora ABC,3.1,134,Mercado Livre,Kit Tinta,desconhecido,False,False,False,False,False,0.61,1
+Cartucho Compatível 664 Preto,Descrição detalhada do cartucho 8. Alta qualidade e rendimento.,65.53,Loja Americanas,3.0,48,Mercado Livre,Cartucho,suspeito,False,True,True,True,False,0.95,0
+Cartucho HP 901 Colorido Original,Descrição detalhada do cartucho 9. Alta qualidade e rendimento.,228.35,Distribuidora ABC,3.5,355,Americanas,Toner,suspeito,True,True,False,True,True,0.42,0
+Cartucho HP 901 Preto Original,Cartucho 10 compatível com sua impressora.,54.88,Eshop,4.4,175,Americanas,Kit Tinta,original,False,True,True,True,True,0.78,1
+Cartucho HP 122 Preto Original,Descrição detalhada do cartucho 11. Alta qualidade e rendimento.,204.4,Distribuidora ABC,3.7,493,Mercado Livre,Kit Tinta,suspeito,False,True,False,True,True,0.54,0
+Cartucho HP 122 Colorido Original,Cartucho 12 compatível com sua impressora.,32.35,HP Oficial,2.8,80,Mercado Livre,Kit Tinta,desconhecido,False,True,False,False,True,0.21,1
+Cartucho HP 664 Preto Original,Descrição detalhada do cartucho 13. Alta qualidade e rendimento.,93.17,Loja Americanas,4.9,296,Mercado Livre,Kit Tinta,sinais_mistos,False,True,True,False,True,0.61,0
+Cartucho HP 122 Kit Original,Descrição detalhada do cartucho 14. Alta qualidade e rendimento.,123.57,Tec Print,3.1,230,Mercado Livre,Toner,desconhecido,False,False,False,False,False,0.86,0
+Cartucho HP 901 Kit Original,Descrição detalhada do cartucho 15. Alta qualidade e rendimento.,197.61,Eshop,3.5,239,Mercado Livre,Kit Tinta,suspeito,False,True,True,False,False,0.62,0
+Cartucho HP 901 Colorido Original,Descrição detalhada do cartucho 16. Alta qualidade e rendimento.,188.98,HP Oficial,3.8,483,Mercado Livre,Cartucho,desconhecido,True,False,False,True,True,0.66,1
+Cartucho HP 901 Kit Original,Cartucho 17 compatível com sua impressora.,292.03,Eshop,2.9,273,Mercado Livre,Toner,original,False,False,False,True,True,0.42,0
+Cartucho Compatível 664 Preto,Descrição detalhada do cartucho 18. Alta qualidade e rendimento.,87.93,HP Oficial,4.8,497,Mercado Livre,Toner,suspeito,False,False,True,False,False,0.54,1
+Cartucho HP 901 Kit Original,Descrição detalhada do cartucho 19. Alta qualidade e rendimento.,270.28,Loja Americanas,3.5,72,Americanas,Kit Tinta,desconhecido,False,True,True,True,True,0.22,0
+Cartucho HP 664 Preto Original,Descrição detalhada do cartucho 20. Alta qualidade e rendimento.,32.23,Loja Americanas,4.5,121,Americanas,Kit Tinta,sinais_mistos,True,False,False,False,False,0.98,1
+Cartucho HP 901 Preto Original,Descrição detalhada do cartucho 21. Alta qualidade e rendimento.,269.38,HP Oficial,3.5,137,Mercado Livre,Cartucho,sinais_mistos,False,True,True,True,False,0.61,1
+Cartucho Compatível 664 Preto,Descrição detalhada do cartucho 22. Alta qualidade e rendimento.,47.12,Tec Print,3.6,239,Americanas,Kit Tinta,desconhecido,True,True,True,False,False,0.22,1
+Cartucho HP 664 Kit Original,Descrição detalhada do cartucho 23. Alta qualidade e rendimento.,64.75,Loja Americanas,4.7,388,Mercado Livre,Kit Tinta,suspeito,True,True,False,False,False,0.77,0
+Cartucho Compatível 122 Colorido,Descrição detalhada do cartucho 24. Alta qualidade e rendimento.,267.73,Loja Americanas,4.6,154,Mercado Livre,Toner,sinais_mistos,True,True,True,False,True,0.9,0
+Cartucho HP 664 Colorido Original,Descrição detalhada do cartucho 25. Alta qualidade e rendimento.,114.74,Distribuidora ABC,3.8,72,Mercado Livre,Kit Tinta,original,False,False,True,True,True,0.76,0
+Cartucho Compatível 901 Preto,Descrição detalhada do cartucho 26. Alta qualidade e rendimento.,249.42,Eshop,5.0,3,Mercado Livre,Cartucho,original,False,True,True,False,False,0.35,1
+Cartucho Compatível 122 Colorido,Cartucho 27 compatível com sua impressora.,150.1,Tec Print,4.3,390,Mercado Livre,Toner,desconhecido,True,False,True,True,False,0.72,0
+Cartucho HP 122 Kit Original,Descrição detalhada do cartucho 28. Alta qualidade e rendimento.,41.71,Loja Americanas,4.0,343,Americanas,Cartucho,desconhecido,False,False,False,True,False,0.64,0
+Cartucho HP 901 Colorido Original,Descrição detalhada do cartucho 29. Alta qualidade e rendimento.,157.99,Eshop,4.1,396,Mercado Livre,Kit Tinta,suspeito,True,True,True,True,True,0.4,0
+Cartucho Compatível 901 Colorido,Descrição detalhada do cartucho 30. Alta qualidade e rendimento.,47.45,Eshop,2.9,271,Mercado Livre,Cartucho,sinais_mistos,False,False,False,False,True,0.66,1
+Cartucho HP 901 Colorido Original,Descrição detalhada do cartucho 31. Alta qualidade e rendimento.,174.73,Distribuidora ABC,4.7,158,Mercado Livre,Toner,desconhecido,False,True,True,True,False,0.19,1
+Cartucho HP 664 Preto Original,Descrição detalhada do cartucho 32. Alta qualidade e rendimento.,32.91,HP Oficial,2.9,186,Americanas,Cartucho,sinais_mistos,False,False,True,True,True,0.42,0
+Cartucho HP 122 Colorido Original,Descrição detalhada do cartucho 33. Alta qualidade e rendimento.,101.22,Tec Print,4.0,223,Mercado Livre,Cartucho,sinais_mistos,True,True,True,True,False,0.76,0
+Cartucho HP 122 Colorido Original,Cartucho 34 compatível com sua impressora.,288.39,HP Oficial,3.0,356,Americanas,Toner,desconhecido,False,True,False,True,True,0.54,1
+Cartucho HP 122 Kit Original,Cartucho 35 compatível com sua impressora.,35.27,Tec Print,3.7,140,Mercado Livre,Kit Tinta,suspeito,True,False,False,False,True,0.75,0
+Cartucho HP 122 Preto Original,Descrição detalhada do cartucho 36. Alta qualidade e rendimento.,252.18,Distribuidora ABC,3.8,26,Americanas,Toner,suspeito,True,True,True,True,True,0.9,1
+Cartucho Compatível 664 Colorido,Cartucho 37 compatível com sua impressora.,185.42,HP Oficial,3.4,488,Americanas,Cartucho,suspeito,True,False,True,True,False,0.99,0
+Cartucho HP 122 Preto Original,Cartucho 38 compatível com sua impressora.,192.49,Distribuidora ABC,4.2,453,Mercado Livre,Cartucho,desconhecido,True,False,False,False,False,0.8,0
+Cartucho HP 664 Kit Original,Descrição detalhada do cartucho 39. Alta qualidade e rendimento.,49.37,Tec Print,4.0,305,Mercado Livre,Kit Tinta,original,True,False,False,True,False,0.63,1
+Cartucho HP 664 Preto Original,Descrição detalhada do cartucho 40. Alta qualidade e rendimento.,290.87,Distribuidora ABC,3.0,293,Americanas,Kit Tinta,original,False,True,False,False,True,0.91,0
+Cartucho HP 901 Preto Original,Cartucho 41 compatível com sua impressora.,30.63,Loja Americanas,4.5,390,Americanas,Kit Tinta,desconhecido,False,True,False,False,True,0.43,0
+Cartucho Compatível 122 Preto,Cartucho 42 compatível com sua impressora.,242.39,Tec Print,2.6,435,Mercado Livre,Toner,sinais_mistos,False,True,True,True,False,0.78,0
+Cartucho HP 901 Colorido Original,Descrição detalhada do cartucho 43. Alta qualidade e rendimento.,196.02,Tec Print,4.8,386,Mercado Livre,Cartucho,suspeito,False,False,True,True,False,0.43,0
+Cartucho HP 122 Preto Original,Descrição detalhada do cartucho 44. Alta qualidade e rendimento.,165.05,Tec Print,4.4,449,Americanas,Toner,desconhecido,False,False,True,False,False,0.37,1
+Cartucho HP 664 Preto Original,Cartucho 45 compatível com sua impressora.,265.26,HP Oficial,2.8,107,Mercado Livre,Kit Tinta,sinais_mistos,False,False,False,True,False,0.44,0
+Cartucho Compatível 901 Colorido,Cartucho 46 compatível com sua impressora.,39.46,HP Oficial,2.7,242,Americanas,Cartucho,sinais_mistos,True,True,True,True,True,0.16,1
+Cartucho HP 901 Preto Original,Descrição detalhada do cartucho 47. Alta qualidade e rendimento.,81.78,Eshop,4.7,154,Americanas,Toner,sinais_mistos,False,True,False,True,True,0.4,0
+Cartucho Compatível 664 Colorido,Cartucho 48 compatível com sua impressora.,258.92,Loja Americanas,4.7,320,Americanas,Cartucho,suspeito,False,True,True,False,False,0.17,1
+Cartucho Compatível 901 Colorido,Cartucho 49 compatível com sua impressora.,60.63,Eshop,2.5,269,Mercado Livre,Kit Tinta,desconhecido,False,True,False,False,True,0.8,1

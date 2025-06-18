@@ -1,0 +1,27 @@
+2025-06-13 22:53:23,607 - INFO - Chrome WebDriver initialized successfully
+2025-06-13 22:53:23,663 - INFO - WebDriver closed
+2025-06-13 22:53:46,921 - INFO - Starting limited test of HP Product Scraper...
+2025-06-13 22:53:47,247 - INFO - Chrome WebDriver initialized successfully
+2025-06-13 22:53:47,247 - INFO - Starting HP product scraping...
+2025-06-13 22:53:47,247 - INFO - Search terms: ['cartucho hp 664']
+2025-06-13 22:53:47,247 - INFO - Max pages per term: 1
+2025-06-13 22:53:47,247 - INFO - Searching for: cartucho hp 664
+2025-06-13 22:53:51,515 - INFO - Scraping page 1 for term: cartucho hp 664
+2025-06-13 22:54:01,545 - INFO - Found 0 product links
+2025-06-13 22:54:04,545 - INFO - Scraping completed. Total products collected: 0
+2025-06-13 22:54:04,546 - WARNING - No products to save
+2025-06-13 22:54:04,607 - INFO - WebDriver closed
+2025-06-13 22:54:04,607 - INFO - Test completed. Collected 0 products.
+2025-06-13 22:54:04,608 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbe22e07a90>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/42026c88be454dfdfc672282a8262165
+2025-06-13 22:54:04,608 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbe22e14290>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/42026c88be454dfdfc672282a8262165
+2025-06-13 22:54:04,609 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbe22e149d0>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/42026c88be454dfdfc672282a8262165
+2025-06-13 22:54:04,609 - INFO - WebDriver closed
+2025-06-13 22:57:10,579 - INFO - Chrome WebDriver initialized successfully
+2025-06-13 22:57:10,579 - INFO - Starting HP product scraping (Version 2)...
+2025-06-13 22:57:10,579 - INFO - Search terms: ['cartucho hp 664', 'cartucho hp 122']
+2025-06-13 22:57:10,579 - INFO - Max pages per term: 1
+2025-06-13 22:57:10,579 - INFO - Searching for: cartucho hp 664
+2025-06-13 22:57:18,698 - INFO - Scraping page 1 for term: cartucho hp 664
+2025-06-13 22:57:19,131 - INFO - Found 4 unique product links
+2025-06-13 22:57:19,131 - INFO - Found 4 product links on page 1
+2025-06-13 22:57:19,131 - INFO - Processing product 1/4: https://click1.mercadolivre.com.br/brand_ads/clicks/MLB/count?a=Z0UDQhywrsqpDbtMZFg7mZvHW%2FZ%2BmsalTPM9LNsHdr7oB2MAPNXGcOysF1q6rrwEqS2IyHAXFNri%2FJC554vp1gp3O4zOFc2D22JR%2Fv5g7m%2Fx2YZCNqX%2FSA30Dj4R5sTp%2B%2BS5jon4Hf%2FPlDpFQspS3fFomnsFtkW%2F3ZfLdkc2tt12LkBua0UhP3Nc%2FRlplBAtkKmIAaSsAk0Nca8bhMm4z8NjdNLkZa%2FIREvvdT3M4%2Fu59a8jrCioHxcijll9sLpzlOg7JxRis8A%2Fo0YV7Xe5YFnNaRhyd45lxHbAHxMuDjZ%2BN4dXqqbOzC2D%2BTd5E9q4FQIxz7ufa56%2Fu54V0HU%2BHgg5M6EnWdUP2OC%2FP0T0pRupTBmoHDdIFZItANlTLmL7ytCxDuAHBnfc6kJ8gCvN5cvafngIONB4%2BhKkTl4N6oBBv6Os06KKdG11aWrejcLhcnjUEPTpMbQMTHtXhyHk%2BsX5Ijmo9oLeK6F%2Bw7%2FS5vYVbQcstd%2BKMkm0XFl6O1wGN%2FOEYbSNEyDy8W7c%2FiAYH8NYsGQGkZXOoYlxzhYijDeWUCO0WVAtB1rroEeNJUVPCn8H5QxFnlIvjvITq5WyhyBYW%2FaXfTtlKaXyB6EHx8%2BTSnPuLYbDP3IH7xFBjxIIbcUwaVohu4GPHdf9h1GrEGbb%2FpD2ECKkne5Nle1XNyrycGLJAXNW0Kb2NkkYtUT0vz5P2OX91UBtxGwcxEIUjm6Ub5xc9uIIXnE4KnFqzfbSpjznyMA3owY31PXHaW1buEcWRcOIOhgQssSj98LdamaBpCqZZIsEZJd%2FpbiIsXaTq4Letjv6UvdYwF1dTiG7woaneiLqa9Sys9WDObugmGjbRlYGoXYWcbQOMc%2Fx7HfKejVzS%2BJ2bLn44aEsTLlgccRGhwgFdwJTWae%2B6JZ8ZRYrmmLTxC8XX2sHjmMxNOgPmtfzhJ1D%2F0L5SWUY0ZwyD4Elac4oBuhONoN6Kt199%2BAcalnteIXocBRvzfSkvPkfQBIQFxbDEzksbY1MvOQilqbaOFFPR1Jx2AgtIsTMZNpp8d2lFyJr3dCq49%2FPHi5qJL6zAvWJRDlBloY%2FkACl7E8NDpIsfq42dvQ0sVys4ZI%3D

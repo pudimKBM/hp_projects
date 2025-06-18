@@ -1,0 +1,15 @@
+2025-06-14 01:02:05,728 - INFO - Chrome WebDriver initialized successfully.
+2025-06-14 01:02:05,728 - INFO - Navigating to https://www.americanas.com.br/busca/cartucho-hp-664
+2025-06-14 01:02:12,893 - INFO - No cookie banner found or it disappeared quickly.
+2025-06-14 01:02:26,085 - WARNING - Timeout waiting for product links on Americanas.
+2025-06-14 01:02:26,147 - INFO - WebDriver closed.
+2025-06-14 01:12:32,587 - INFO - Chrome WebDriver initialized successfully.
+2025-06-14 01:12:32,588 - INFO - Navigating to https://www.americanas.com.br/busca/cartucho-hp-664
+2025-06-14 01:12:39,590 - INFO - No cookie banner found or it disappeared quickly.
+2025-06-14 01:12:52,778 - WARNING - Timeout waiting for product links on Americanas.
+2025-06-14 01:12:52,842 - INFO - WebDriver closed.
+2025-06-14 01:16:21,805 - INFO - Chrome WebDriver initialized successfully.
+2025-06-14 01:16:21,805 - INFO - Navigating to https://www.americanas.com.br/busca/cartucho-hp-664
+2025-06-14 01:16:29,255 - INFO - No cookie banner found or it disappeared quickly.
+2025-06-14 01:16:42,473 - WARNING - Timeout waiting for product links on Americanas.
+2025-06-14 01:16:42,534 - INFO - WebDriver closed.

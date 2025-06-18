@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+      .slide-container {
+        width: 1280px; 
+        min-height: 720px; 
+        background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide-container p-12">
+      <div class="mb-8">
+        <h1 class="text-4xl font-bold text-gray-800 mb-4">Fontes de Dados</h1>
+        <div class="w-20 h-1 bg-blue-600 rounded"></div>
+      </div>
+      
+      <div class="grid grid-cols-2 gap-8 h-96">
+        <!-- Mercado Livre -->
+        <div class="bg-white rounded-2xl shadow-lg p-8 flex flex-col">
+          <div class="flex items-center mb-6">
+            <div class="bg-yellow-400 rounded-full p-3 mr-4">
+              <i class="fas fa-shopping-cart text-white text-xl"></i>
+            </div>
+            <div>
+              <h2 class="text-2xl font-bold text-gray-800">Mercado Livre</h2>
+              <p class="text-gray-600">Principal plataforma de e-commerce</p>
+            </div>
+          </div>
+          
+          <div class="space-y-4 flex-grow">
+            <div class="flex justify-between items-center">
+              <span class="text-gray-600">Produtos coletados:</span>
+              <span class="font-semibold text-gray-800">5 amostras</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-gray-600">Tecnologia:</span>
+              <span class="font-semibold text-gray-800">Selenium WebDriver</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-gray-600">Campos extraídos:</span>
+              <span class="font-semibold text-gray-800">12 atributos</span>
+            </div>
+          </div>
+          
+          <div class="mt-6 bg-yellow-50 rounded-lg p-4">
+            <div class="text-sm font-medium text-yellow-800 mb-2">Características</div>
+            <ul class="text-xs text-yellow-700 space-y-1">
+              <li>• Maior diversidade de vendedores</li>
+              <li>• Ampla faixa de preços</li>
+              <li>• Sistema de avaliações robusto</li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Americanas -->
+        <div class="bg-white rounded-2xl shadow-lg p-8 flex flex-col">
+          <div class="flex items-center mb-6">
+            <div class="bg-red-500 rounded-full p-3 mr-4">
+              <i class="fas fa-store text-white text-xl"></i>
+            </div>
+            <div>
+              <h2 class="text-2xl font-bold text-gray-800">Americanas</h2>
+              <p class="text-gray-600">Plataforma complementar</p>
+            </div>
+          </div>
+          
+          <div class="space-y-4 flex-grow">
+            <div class="flex justify-between items-center">
+              <span class="text-gray-600">Produtos coletados:</span>
+              <span class="font-semibold text-gray-800">5 amostras</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-gray-600">Tecnologia:</span>
+              <span class="font-semibold text-gray-800">Dados mockados</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-gray-600">Campos extraídos:</span>
+              <span class="font-semibold text-gray-800">12 atributos</span>
+            </div>
+          </div>
+          
+          <div class="mt-6 bg-red-50 rounded-lg p-4">
+            <div class="text-sm font-medium text-red-800 mb-2">Características</div>
+            <ul class="text-xs text-red-700 space-y-1">
+              <li>• Foco em produtos oficiais</li>
+              <li>• Preços mais padronizados</li>
+              <li>• Menor variação de vendedores</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Summary Stats -->
+      <div class="mt-8 bg-blue-50 rounded-xl p-6">
+        <div class="grid grid-cols-4 gap-6 text-center">
+          <div>
+            <div class="text-2xl font-bold text-blue-600">10</div>
+            <div class="text-sm text-blue-800">Total de Produtos</div>
+          </div>
+          <div>
+            <div class="text-2xl font-bold text-blue-600">2</div>
+            <div class="text-sm text-blue-800">Plataformas</div>
+          </div>
+          <div>
+            <div class="text-2xl font-bold text-blue-600">12</div>
+            <div class="text-sm text-blue-800">Atributos por Produto</div>
+          </div>
+          <div>
+            <div class="text-2xl font-bold text-blue-600">100%</div>
+            <div class="text-sm text-blue-800">Taxa de Sucesso</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

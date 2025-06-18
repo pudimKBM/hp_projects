@@ -1,0 +1,15 @@
+2025-06-14 00:09:39,851 - INFO - Using latest enriched file: hp_products_enriched_20250613_230048.csv
+2025-06-14 00:09:39,854 - INFO - Successfully loaded data from hp_products_enriched_20250613_230048.csv
+2025-06-14 00:09:39,854 - INFO - Generating descriptive statistics...
+2025-06-14 00:09:39,864 - INFO - Descriptive statistics generated.
+2025-06-14 00:09:39,864 - INFO - Identifying outliers...
+2025-06-14 00:09:39,885 - INFO - Outlier identification completed.
+2025-06-14 00:09:39,885 - INFO - Performing lexical analysis on 'description' column...
+2025-06-14 00:09:39,885 - INFO - Lexical analysis completed.
+2025-06-14 00:09:39,885 - INFO - Generating visualizations...
+2025-06-14 00:09:40,095 - INFO - Saved price_distribution.png
+2025-06-14 00:09:40,113 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-06-14 00:09:40,119 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-06-14 00:09:40,194 - INFO - Saved rating_distribution.png
+2025-06-14 00:09:40,278 - INFO - Saved product_classification.png
+2025-06-14 00:09:40,278 - INFO - Visualizations generated.

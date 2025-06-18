@@ -1,0 +1,5 @@
+2025-06-13 23:38:10,761 - INFO - Using latest demo file: hp_products_demo_20250613_230048.csv
+2025-06-13 23:38:10,767 - INFO - Successfully loaded data from hp_products_demo_20250613_230048.csv
+2025-06-13 23:38:10,767 - INFO - Starting data cleaning and standardization...
+2025-06-13 23:38:10,774 - INFO - Data cleaning and standardization completed.
+2025-06-13 23:38:10,776 - INFO - Successfully saved cleaned data to hp_products_cleaned_20250613_230048.csv

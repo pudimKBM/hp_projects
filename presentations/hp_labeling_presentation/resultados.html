@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+      .slide-container {
+        width: 1280px; 
+        min-height: 720px; 
+        background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide-container p-12">
+      <div class="mb-8">
+        <h1 class="text-4xl font-bold text-gray-800 mb-4">Resultados</h1>
+        <div class="w-20 h-1 bg-blue-600 rounded"></div>
+      </div>
+      
+      <div class="grid grid-cols-2 gap-8 min-h-[500px]">
+        <!-- Chart -->
+        <div class="bg-white rounded-xl shadow-lg p-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-4">Distribuição dos Rótulos</h3>
+          <div style="height: 300px;">
+            <canvas id="labelChart"></canvas>
+          </div>
+        </div>
+        
+        <!-- Statistics -->
+        <div class="bg-white rounded-xl shadow-lg p-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-6">Estatísticas do Dataset</h3>
+          
+          <div class="space-y-6">
+            <div class="grid grid-cols-2 gap-4">
+              <div class="bg-blue-50 rounded-lg p-4 text-center">
+                <div class="text-2xl font-bold text-blue-600">10</div>
+                <div class="text-sm text-blue-800">Total de Produtos</div>
+              </div>
+              <div class="bg-green-50 rounded-lg p-4 text-center">
+                <div class="text-2xl font-bold text-green-600">5</div>
+                <div class="text-sm text-green-800">Produtos Originais</div>
+              </div>
+            </div>
+            
+            <div class="grid grid-cols-2 gap-4">
+              <div class="bg-red-50 rounded-lg p-4 text-center">
+                <div class="text-2xl font-bold text-red-600">1</div>
+                <div class="text-sm text-red-800">Produtos Suspeitos</div>
+              </div>
+              <div class="bg-yellow-50 rounded-lg p-4 text-center">
+                <div class="text-2xl font-bold text-yellow-600">2</div>
+                <div class="text-sm text-yellow-800">Sinais Mistos</div>
+              </div>
+            </div>
+            
+            <div class="bg-gray-50 rounded-lg p-4">
+              <h4 class="font-semibold text-gray-800 mb-3">Faixa de Preços</h4>
+              <div class="space-y-2 text-sm">
+                <div class="flex justify-between">
+                  <span>Mínimo:</span>
+                  <span class="font-medium">R$ 66,90</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>Máximo:</span>
+                  <span class="font-medium">R$ 242,49</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>Média:</span>
+                  <span class="font-medium">R$ 133,15</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Key Insights -->
+      <div class="mt-8 bg-blue-50 rounded-xl p-6">
+        <h3 class="text-lg font-semibold text-blue-800 mb-4">Principais Insights</h3>
+        <div class="grid grid-cols-3 gap-6">
+          <div class="text-center">
+            <i class="fas fa-check-circle text-green-600 text-2xl mb-2"></i>
+            <div class="text-sm font-medium text-gray-800">50% dos produtos foram classificados como originais</div>
+          </div>
+          <div class="text-center">
+            <i class="fas fa-balance-scale text-blue-600 text-2xl mb-2"></i>
+            <div class="text-sm font-medium text-gray-800">Critérios heurísticos mostraram-se eficazes na classificação</div>
+          </div>
+          <div class="text-center">
+            <i class="fas fa-chart-line text-purple-600 text-2xl mb-2"></i>
+            <div class="text-sm font-medium text-gray-800">Dataset balanceado para treinamento de ML</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      const ctx = document.getElementById('labelChart').getContext('2d');
+      new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+          labels: ['Original', 'Suspeito', 'Sinais Mistos', 'Desconhecido'],
+          datasets: [{
+            data: [5, 1, 2, 2],
+            backgroundColor: [
+              '#10B981',
+              '#EF4444',
+              '#F59E0B',
+              '#6B7280'
+            ],
+            borderWidth: 2,
+            borderColor: '#ffffff'
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              position: 'bottom',
+              labels: {
+                padding: 20,
+                usePointStyle: true
+              }
+            }
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
+
