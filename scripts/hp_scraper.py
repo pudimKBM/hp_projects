@@ -5,9 +5,6 @@ Challenge Sprint - HP Project
 
 This script automates the collection of HP product data from e-commerce platforms
 to identify potential counterfeit products. It focuses on HP cartridges and related products.
-
-Author: RPA Team
-Date: 2024
 """
 
 import time
