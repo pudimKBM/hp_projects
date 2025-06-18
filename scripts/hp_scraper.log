@@ -1,0 +1,163 @@
+2025-06-18 04:07:24,557 - INFO - Chrome WebDriver initialized successfully
+2025-06-18 04:07:24,557 - INFO - Starting HP product scraping...
+2025-06-18 04:07:24,557 - INFO - Search terms: ['cartucho hp original', 'cartucho hp 664 original', 'cartucho hp 122 original', 'toner hp original', 'cartucho hp compativel']
+2025-06-18 04:07:24,558 - INFO - Max pages per term: 2
+2025-06-18 04:07:24,558 - INFO - Searching for: cartucho hp original
+2025-06-18 04:07:29,100 - INFO - Scraping page 1 for term: cartucho hp original
+2025-06-18 04:07:39,159 - INFO - Found 0 product links
+2025-06-18 04:07:39,234 - ERROR - Error searching for term 'cartucho hp original': Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=137.0.7151.119); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6e0facda5+78885]
+	GetHandleVerifier [0x0x7ff6e0face00+78976]
+	(No symbol) [0x0x7ff6e0d69bca]
+	(No symbol) [0x0x7ff6e0d715bd]
+	(No symbol) [0x0x7ff6e0d7460c]
+	(No symbol) [0x0x7ff6e0d746df]
+	(No symbol) [0x0x7ff6e0dc865b]
+	(No symbol) [0x0x7ff6e0dc5b81]
+	(No symbol) [0x0x7ff6e0dc3151]
+	(No symbol) [0x0x7ff6e0dc2041]
+	(No symbol) [0x0x7ff6e0db3654]
+	(No symbol) [0x0x7ff6e0de8b8a]
+	(No symbol) [0x0x7ff6e0db2f06]
+	(No symbol) [0x0x7ff6e0de8da0]
+	(No symbol) [0x0x7ff6e0e1122f]
+	(No symbol) [0x0x7ff6e0de8963]
+	(No symbol) [0x0x7ff6e0db16b1]
+	(No symbol) [0x0x7ff6e0db2443]
+	GetHandleVerifier [0x0x7ff6e1284eed+3061101]
+	GetHandleVerifier [0x0x7ff6e127f33d+3037629]
+	GetHandleVerifier [0x0x7ff6e129e592+3165202]
+	GetHandleVerifier [0x0x7ff6e0fc730e+186766]
+	GetHandleVerifier [0x0x7ff6e0fceb3f+217535]
+	GetHandleVerifier [0x0x7ff6e0fb59b4+114740]
+	GetHandleVerifier [0x0x7ff6e0fb5b69+115177]
+	GetHandleVerifier [0x0x7ff6e0f9c368+10728]
+	BaseThreadInitThunk [0x0x7fff49fee8d7+23]
+	RtlUserThreadStart [0x0x7fff4b63c34c+44]
+
+2025-06-18 04:07:39,234 - INFO - Searching for: cartucho hp 664 original
+2025-06-18 04:07:43,316 - INFO - Scraping page 1 for term: cartucho hp 664 original
+2025-06-18 04:07:53,356 - INFO - Found 0 product links
+2025-06-18 04:07:53,492 - ERROR - Error searching for term 'cartucho hp 664 original': Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=137.0.7151.119); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6e0facda5+78885]
+	GetHandleVerifier [0x0x7ff6e0face00+78976]
+	(No symbol) [0x0x7ff6e0d69bca]
+	(No symbol) [0x0x7ff6e0d715bd]
+	(No symbol) [0x0x7ff6e0d7460c]
+	(No symbol) [0x0x7ff6e0d746df]
+	(No symbol) [0x0x7ff6e0dc865b]
+	(No symbol) [0x0x7ff6e0dc5b81]
+	(No symbol) [0x0x7ff6e0dc3151]
+	(No symbol) [0x0x7ff6e0dc2041]
+	(No symbol) [0x0x7ff6e0db3654]
+	(No symbol) [0x0x7ff6e0de8b8a]
+	(No symbol) [0x0x7ff6e0db2f06]
+	(No symbol) [0x0x7ff6e0de8da0]
+	(No symbol) [0x0x7ff6e0e1122f]
+	(No symbol) [0x0x7ff6e0de8963]
+	(No symbol) [0x0x7ff6e0db16b1]
+	(No symbol) [0x0x7ff6e0db2443]
+	GetHandleVerifier [0x0x7ff6e1284eed+3061101]
+	GetHandleVerifier [0x0x7ff6e127f33d+3037629]
+	GetHandleVerifier [0x0x7ff6e129e592+3165202]
+	GetHandleVerifier [0x0x7ff6e0fc730e+186766]
+	GetHandleVerifier [0x0x7ff6e0fceb3f+217535]
+	GetHandleVerifier [0x0x7ff6e0fb59b4+114740]
+	GetHandleVerifier [0x0x7ff6e0fb5b69+115177]
+	GetHandleVerifier [0x0x7ff6e0f9c368+10728]
+	BaseThreadInitThunk [0x0x7fff49fee8d7+23]
+	RtlUserThreadStart [0x0x7fff4b63c34c+44]
+
+2025-06-18 04:07:53,494 - INFO - Searching for: cartucho hp 122 original
+2025-06-18 04:07:56,716 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'Foi forçado o cancelamento de uma conexão existente pelo host remoto', None, 10054, None)': /session/fe06b5f52752c0ff67a0626b8645b7fe
+2025-06-18 04:07:58,964 - INFO - Scraping interrupted by user
+2025-06-18 04:08:09,708 - INFO - Chrome WebDriver initialized successfully
+2025-06-18 04:08:09,708 - INFO - Starting HP product scraping (Version 2)...
+2025-06-18 04:08:09,708 - INFO - Search terms: ['cartucho hp 664', 'cartucho hp 122']
+2025-06-18 04:08:09,708 - INFO - Max pages per term: 1
+2025-06-18 04:08:09,708 - INFO - Searching for: cartucho hp 664
+2025-06-18 04:08:18,220 - INFO - Scraping page 1 for term: cartucho hp 664
+2025-06-18 04:08:18,936 - INFO - Found 4 unique product links
+2025-06-18 04:08:18,937 - INFO - Found 4 product links on page 1
+2025-06-18 04:08:18,937 - INFO - Processing product 1/4: https://click1.mercadolivre.com.br/brand_ads/clicks/MLB/count?a=EeczoApxoDZCc1krereeTvOx4YwYuYhdtAtDpo6PcxRsoKRniajm3wsw6nL9dg%2BAIVj7fbPwilpUjumxBqALgXJcDjYqDtqlEdBUTi6aXw0%2B7fAu5hJsyVVSgJBZbqYcHgqg0X7%2F9LXWuzKcNzhf9K%2FIs0RG89VdJhWr6rAUeM70Hcb9JohPMv5javdHHFC8%2BP4CBhPVClojMzuoCNKp%2Bwn57TSmMa%2FjoKmp1D0WfTFPWdujVyH9xpDSCXsKMQGhJ86yHGvYDurYwqRwvqj8%2FD5nc2wHA%2F1vhQTaXmqa3nYZ4pNJ%2BtiqTb5ThTf5dFoktXmgnNlGPmtAysHOjfO0EfMLTEYgOgDlcxkQhbgBkjWri%2FaIbVaf7RHV5lpdWp3bLp0AOTZ7WYz47vR79igBr7KKCAu7SXoB5d1x%2F756JtynyHN8wQo5Y2Vnwq6eZxksS3ba4ff5lDSoS2vAAHVX4H0vBdBjqHgYhue37q4kxfKOCpe77qi6cn%2FHaOTb1fiMXHroO01NxzZs1AjJ2kOjoY8jWlLmCz5bm8b0ZmrKcovq%2Bg2gdNp32vx2%2FrKiMXzlyYQYu3mj1CYHaiueksayPoXSlo9M5R5au1ZpAVI%2Fz5jdIQGcJW32XeYeizPHWzcAes2HjXy4w%2Bkz6VtmL9bbcuNmhKCn930Ys9LDtopppVyRlZsukmhQSCPSqJ49PdLk7fDPzwlM3VsO06mv1hUV9fNG%2BS1fieGL5OsUUCFDiROJ72sWxpCYmq%2BmVIUhR5ktv9d5RLVC5ZggDbLIs1oAKdxU5gLrBjsEeOkb74XDsYXzn%2BeYEu5mT67UHwIfSul3spl%2BPcVX4siNE1LCjy97A7clM3VTjxkHTRAUmPgIw%2FAxaMh2fsLBu%2Fn3Q5MsF%2FAgr77CBEsI%2FZGGP%2BWJOvISzqnDGYYoMgHipb1gwqGM%2F7QoiPVngK%2BpmS%2Fz1gzzxXSqbFcWmmT8P3vnNExIPdw2bdyujvXM0G8tmTdxa%2Bu41VO7XKgvyFovuHlss02ZpI95Ybv90%2BTNoZNGVuLX%2FWgVYuDonGkVLfj%2FF%2FvpFgA6dzD0wnEPUA2eY53eIBbI79Q5ToQd0hUmt06XMfbIT64Hu9e9oWapiHbc
+2025-06-18 04:09:25,019 - INFO - Scraping interrupted by user
+2025-06-18 04:10:02,761 - INFO - Chrome WebDriver initialized successfully
+2025-06-18 04:10:02,762 - INFO - Starting HP product scraping (Version 2)...
+2025-06-18 04:10:02,762 - INFO - Search terms: ['cartucho hp 664', 'cartucho hp 122']
+2025-06-18 04:10:02,762 - INFO - Max pages per term: 1
+2025-06-18 04:10:02,762 - INFO - Searching for: cartucho hp 664
+2025-06-18 04:10:11,110 - INFO - Scraping page 1 for term: cartucho hp 664
+2025-06-18 04:10:12,096 - INFO - Found 4 unique product links
+2025-06-18 04:10:12,097 - INFO - Found 4 product links on page 1
+2025-06-18 04:10:12,097 - INFO - Processing product 1/4: https://click1.mercadolivre.com.br/brand_ads/clicks/MLB/count?a=1ZVFtvFHqe7KHOB%2F7Bg78FH4eUEGIQcbubVtHM%2FC2jx5hXFyHOsyi%2FvWzSspRkQOen6Zyk1R%2Ft1SEZGv80PDw1KwfYmmucq53%2F10sVM2X7Cu%2FnDqVnbDWdKzSIcTorIa%2BmdV5R99P2%2B42AISBSli40qQOZU9qyhopb4ZCoSdgAtnImcCo2Vm2T1%2BRNUfgsftVCQ%2FIe0ofD1d7NvD55bZBmp2moHVMPQAVNk%2FSFXvM09XOKnLW7WteVsu5xMqGanOd04ubUYR1it%2BbYDZpYEE3%2BJZwiuT%2BLz1QdESrMMZLYAu%2FgyrOYeMAenDdA65o9PDqbrR5%2F0YEK045MhRyifjexHuviyVy7sxK%2B4OvmzKMvrI4FGVGBbyce%2BlR3JLhNmqND9%2BGpA5%2BPCTvKoOowC66J6CVwBRBgUgC3qeRlP90LNqnA%2BnTBQdKA9ExpoYGfvp6je0ygD9XiI%2Bhu0%2B%2Bku8UxcsZ8hDffdMisVR1EqvKhAStc9VHYCVs45DqDMV9Tr%2FRTbUrm8tl77t5Ul4GZXgTi0HQboGUbIU3RXFWnedAJdLKt6lfO2pyiXYrgaelEG36USQ5ZEAYwFETqbxyltOeitN%2BtZZLM92Tr%2B7a62f4TebxQV%2FKHmsZQm6EcBXt9lYLwK26cKL7poNJMPn%2FCRqfck4UaCNLuW%2BE1v9TnvtM%2BVvQrXk39tC72d%2F8uSO4aGy%2F%2BLKa4UHtosVHsWTP6Vh%2BoiNaV%2BZXfATz3RjNuVvUM9YtdRxYXaBglOMi69PmUrOZJDsW0%2FylSwD%2FJXfZjbLVNx8dw4yTGK1fSlHQLowoxrA78tHZIJ9%2BE4cCK5skMuVvwtH1RIRHGHjN8R%2BWJ4VI8HUuai%2BxSFbJzjO0ECU5IU4eIMVYDlARvRWtM1AFmqCiE6G2xSDjqECwS6w%2FEuITKXrorKuWkbT7eGCxjcSEfGJk%2BB3OltuwqfthcXIf28SK2BEjBlqgwQ0quVLUXT%2Bs6hSt%2BKxO0C%2BsCxrEzfsUNiE8FLy9FBaUdVpMg9oAR0xtQkh9LnYqfi%2BoCpxOgbc79P6b3zd0Bru5Yuz0kxQwO4mfSATc2LPfndMddvtQwEGDnFLpyMsOSxARCFYDjw6VV00LDuaPs%2BW
+2025-06-18 04:14:37,550 - INFO - Scraping interrupted by user
+2025-06-18 04:14:41,599 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000023A307A8560>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente')': /session/3702531accbb81b17a18b57ad7dddcd6
+2025-06-18 04:14:45,667 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000023A307A86E0>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente')': /session/3702531accbb81b17a18b57ad7dddcd6
+2025-06-18 04:14:49,725 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000023A307A8860>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente')': /session/3702531accbb81b17a18b57ad7dddcd6
+2025-06-18 04:15:01,249 - INFO - Chrome WebDriver initialized successfully
+2025-06-18 04:15:01,250 - INFO - Starting HP product scraping (Version 2)...
+2025-06-18 04:15:01,250 - INFO - Search terms: ['cartucho hp 664', 'cartucho hp 122']
+2025-06-18 04:15:01,250 - INFO - Max pages per term: 1
+2025-06-18 04:15:01,250 - INFO - Searching for: cartucho hp 664
+2025-06-18 04:15:05,300 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'Foi forçado o cancelamento de uma conexão existente pelo host remoto', None, 10054, None)': /session/54bfb54129e913a4535a2d6f73dfa03d
+2025-06-18 04:15:09,354 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000215F275FE30>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente')': /session/54bfb54129e913a4535a2d6f73dfa03d
+2025-06-18 04:15:13,418 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000215F275FF50>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente')': /session/54bfb54129e913a4535a2d6f73dfa03d
+2025-06-18 04:15:21,825 - INFO - WebDriver closed
+2025-06-18 04:15:21,825 - INFO - Scraping interrupted by user
+2025-06-18 04:15:25,929 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000215F27783E0>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente')': /session/54bfb54129e913a4535a2d6f73dfa03d
+2025-06-18 04:15:30,039 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000215F2778500>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente')': /session/54bfb54129e913a4535a2d6f73dfa03d
+2025-06-18 04:15:34,137 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000215F2778620>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente')': /session/54bfb54129e913a4535a2d6f73dfa03d
+2025-06-18 04:15:42,310 - INFO - WebDriver closed
+2025-06-18 04:16:07,536 - INFO - Chrome WebDriver initialized successfully
+2025-06-18 04:16:07,536 - INFO - Starting HP product scraping (Version 2)...
+2025-06-18 04:16:07,536 - INFO - Search terms: ['cartucho hp 664', 'cartucho hp 122']
+2025-06-18 04:16:07,536 - INFO - Max pages per term: 1
+2025-06-18 04:16:07,537 - INFO - Searching for: cartucho hp 664
+2025-06-18 04:16:16,012 - INFO - Scraping page 1 for term: cartucho hp 664
+2025-06-18 04:16:16,760 - INFO - Found 4 unique product links
+2025-06-18 04:16:16,760 - INFO - Found 4 product links on page 1
+2025-06-18 04:16:16,761 - INFO - Processing product 1/4: https://click1.mercadolivre.com.br/brand_ads/clicks/MLB/count?a=5VCPhALNnM3OAa9cxxRJBniUPkjmh3TRzkjkpO6rVbCdK8KUUJO2zokreDcUdczLF2T3CIGEs5O5t6PTkO53C8PbYFM88o55g7uR%2B71VWylxv%2FL0dxS2kyCxepz3dem3UKgjMGzmnbf2C55xPBWR6UtR451Iwi3YQ7zkkGSn9aosC0zkmY6CTRem5%2BKLtNqdA01M0WZHba19IAUryl6FTQVMIffXm7bIGIrWhMTh2n%2Fwlu%2BE1ca9V3hMh8Yz0GFRmFXbgJwihi08d5bmip7D4AFjzStht2gpKt%2BJm7QJZuMUzWixYebdqTVTdljQTpJdpP2Mp%2B9rJ8Jcs%2FnwQMnwynNTLAoy3%2BZ6bOUZzXIdFb7wVLL9k2gmihc41FAZjv6zYQ4lyX13OPp%2FLawfCSHttGQq2l7hX%2BedcMKh%2FhnC8XgQCVBSjHlBr8S5MDZrDljdMWp7sCsppFrmxSIpLxR1SYBqaawAkmkPKetRGgYHflqc0JZ7lWuJY3mkfBVnb2axT6Y3mLXnrMGSZYzoCbrZWohNwCXLWKCYy9T3WsKNEEjLf0%2BeUo9ct1qCfmysqPWky47BSwhhdvHOFFDyr%2B7xL%2F9QNZX66d7uQejiO%2BR0CdbbwZp7qBNbcd8EH0C6Kusuurk23GS4KOZNFoYChld4ArYmELS3nIBsIxOT1I2cNlGoQputE%2Fns6H%2BXg3uS%2B%2BqUpkvDPAW1xKqECVp%2FNTzthKe6kC5ZziY0vapLccZCGK8OU8yIhd3goCzOcAz1FsKvHA3i7zahPQl2OPtRSEaiUKroEUmz8%2FjOqafRZMm7VycYahvUeqDDXkc0u7rZZKhu%2Fl%2B0XtaSFICkfbMi6saDPih7aCoa7tSKwmAGh5RGHz9lnzNAIoz2u6ae%2BqZ%2BZE3c%2FLO%2B6bm5ml0rkkDOgb%2FOuxX198ylbJl3w6IlyDYNftAel0TQSXYSoobblIf2Bx2BbLbJsKOzyiYYLBLqOrcoNYSfHqxDQHY%2Fk6IHFIzmodk1V0z%2BsAmHZ9THFiQod9DYq7f18bbiJVyWV0ZhEdc8YZ9tBKzg75wzMT%2BfoN%2FGfjKayiYBf2lhE7Dc196KShOfTUUyXlbv5ucjFzme1uN7Mz4ZxMIntHEdM9%2BN%2FTb7SQ%3D%3D
+2025-06-18 04:19:02,213 - INFO - Scraping interrupted by user
+2025-06-18 04:19:19,566 - INFO - Chrome WebDriver initialized successfully
+2025-06-18 04:19:19,567 - INFO - Starting HP product scraping (Version 2)...
+2025-06-18 04:19:19,567 - INFO - Search terms: ['cartucho hp 664', 'cartucho hp 122']
+2025-06-18 04:19:19,567 - INFO - Max pages per term: 1
+2025-06-18 04:19:19,567 - INFO - Searching for: cartucho hp 664
+2025-06-18 04:19:27,936 - INFO - Scraping page 1 for term: cartucho hp 664
+2025-06-18 04:19:28,720 - INFO - Found 56 unique product links
+2025-06-18 04:19:28,721 - INFO - Found 10 product links on page 1
+2025-06-18 04:19:28,721 - INFO - Processing product 1/5: https://www.mercadolivre.com.br/kit-cartucho-hp-664-preto-e-hp-664-colorido/p/MLB36751072#polycard_client=search-nordic&searchVariation=MLB36751072&wid=MLB3789824595&position=4&search_layout=grid&type=product&tracking_id=91b6f138-7da3-43d0-b969-536ebebeccf1&sid=search
+2025-06-18 04:21:56,418 - INFO - Successfully extracted data for: Kit Cartucho Hp 664 Preto E Hp 664 Colorido...
+2025-06-18 04:21:59,420 - INFO - Processing product 2/5: https://www.mercadolivre.com.br/cartucho-hp-664-pretof6v29ab-para-deskjet-4535-4675-1115-2135-3775/p/MLB22534728#polycard_client=search-nordic&searchVariation=MLB22534728&wid=MLB3927113057&position=5&search_layout=grid&type=product&tracking_id=91b6f138-7da3-43d0-b969-536ebebeccf1&sid=search
+2025-06-18 04:24:27,133 - INFO - Successfully extracted data for: Cartucho HP 664 preto(F6V29AB) Para Deskjet 4535, ...
+2025-06-18 04:24:30,136 - INFO - Processing product 3/5: https://www.mercadolivre.com.br/cartucho-hp-664-coloridof6v28ab-para-ink-advantage-1115-2134-2136-2676-3636-3776-3786-37883790-3836-4536-46765076-5276/p/MLB36752265#polycard_client=search-nordic&searchVariation=MLB36752265&wid=MLB3947461641&position=6&search_layout=grid&type=product&tracking_id=91b6f138-7da3-43d0-b969-536ebebeccf1&sid=search
+2025-06-18 04:26:57,268 - INFO - Successfully extracted data for: Cartucho HP 664 Colorido(F6V28AB) Para Ink Advanta...
+2025-06-18 04:27:00,269 - INFO - Processing product 4/5: https://www.mercadolivre.com.br/cartucho-de-tinta-hp-664-negro-y-664-tricolor-2-unidades/p/MLB36783881#polycard_client=search-nordic&searchVariation=MLB36783881&wid=MLB3688322801&position=7&search_layout=grid&type=product&tracking_id=91b6f138-7da3-43d0-b969-536ebebeccf1&sid=search
+2025-06-18 04:29:27,782 - INFO - Successfully extracted data for: Cartucho De Tinta Hp 664 Negro y 664 Tricolor 2 Un...
+2025-06-18 04:29:30,787 - INFO - Processing product 5/5: https://www.mercadolivre.com.br/cartucho-de-tinta-preta-hp-advantage-664-de-2-ml/p/MLB36751629#polycard_client=search-nordic&searchVariation=MLB36751629&wid=MLB5294137512&position=8&search_layout=grid&type=product&tracking_id=91b6f138-7da3-43d0-b969-536ebebeccf1&sid=search
+2025-06-18 04:31:58,318 - INFO - Successfully extracted data for: Cartucho de tinta preta HP Advantage 664 de 2 ml...
+2025-06-18 04:32:06,322 - INFO - Searching for: cartucho hp 122
+2025-06-18 04:32:23,260 - INFO - Scraping page 1 for term: cartucho hp 122
+2025-06-18 04:32:24,137 - INFO - Found 58 unique product links
+2025-06-18 04:32:24,137 - INFO - Found 10 product links on page 1
+2025-06-18 04:32:24,137 - INFO - Processing product 1/5: https://www.mercadolivre.com.br/cartucho-de-tinta-preta-hp-122/p/MLB36780554#polycard_client=search-nordic&searchVariation=MLB36780554&wid=MLB3776142301&position=8&search_layout=grid&type=product&tracking_id=78686e9d-e69b-46e4-a229-42c2e7e985a4&sid=search
+2025-06-18 04:35:23,098 - INFO - Successfully extracted data for: Cartucho de tinta preta HP 122...
+2025-06-18 04:35:26,100 - INFO - Processing product 2/5: https://www.mercadolivre.com.br/cartuchos-para-impressora-21362676-664xl-hp-blackcolor/p/MLB24123269#polycard_client=search-nordic&searchVariation=MLB24123269&wid=MLB3891250431&position=4&search_layout=grid&type=product&tracking_id=78686e9d-e69b-46e4-a229-42c2e7e985a4&sid=search
+2025-06-18 04:38:15,063 - INFO - Successfully extracted data for: Cartuchos Para Impressora 2136/2676 664xl Hp Black...
+2025-06-18 04:38:18,065 - INFO - Processing product 3/5: https://www.mercadolivre.com.br/cartucho-de-tinta-hp-122-preto/p/MLB24113444#polycard_client=search-nordic&searchVariation=MLB24113444&wid=MLB5276602886&position=7&search_layout=grid&type=product&tracking_id=78686e9d-e69b-46e4-a229-42c2e7e985a4&sid=search
+2025-06-18 04:40:47,259 - INFO - Successfully extracted data for: Cartucho de Tinta HP 122 Preto...
+2025-06-18 04:40:50,260 - INFO - Processing product 4/5: https://www.mercadolivre.com.br/cartucho-de-tinta-hp-122-cor-preto-e-color-do-4-ml-2-unidades/p/MLB36780400#polycard_client=search-nordic&searchVariation=MLB36780400&wid=MLB5157357982&position=5&search_layout=grid&type=product&tracking_id=78686e9d-e69b-46e4-a229-42c2e7e985a4&sid=search
+2025-06-18 04:43:19,134 - INFO - Successfully extracted data for: Cartucho de tinta HP 122 cor preto e color do 4 mL...
+2025-06-18 04:43:22,136 - INFO - Processing product 5/5: https://www.mercadolivre.com.br/kit-hp-122-preto-color-2000-2050-3000-3050-j610a/p/MLB41237201#polycard_client=search-nordic&searchVariation=MLB41237201&wid=MLB3907585551&position=6&search_layout=grid&type=product&tracking_id=78686e9d-e69b-46e4-a229-42c2e7e985a4&sid=search
+2025-06-18 04:45:50,908 - INFO - Successfully extracted data for: Kit Hp 122 Preto + Color 2000 2050 3000 3050 J610a...
+2025-06-18 04:45:58,912 - INFO - Scraping completed. Total products collected: 10
+2025-06-18 04:45:58,921 - INFO - Saved 10 products to hp_products_20250618_044558.csv
+2025-06-18 04:46:03,359 - INFO - WebDriver closed
+2025-06-18 04:46:07,409 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002136114F4A0>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente')': /session/91b2ea37e3647ee014ebb8bd440a9df6
+2025-06-18 04:46:11,443 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021346126E40>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente')': /session/91b2ea37e3647ee014ebb8bd440a9df6
+2025-06-18 04:46:15,492 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021346126AB0>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente')': /session/91b2ea37e3647ee014ebb8bd440a9df6
+2025-06-18 04:46:23,596 - INFO - WebDriver closed
