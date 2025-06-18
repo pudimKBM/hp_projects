@@ -156,8 +156,8 @@ class HPProductScraperV2:
                     href = element.get_attribute('href')
                     if href and ('MLB' in href) and href not in links:
                         # Filter out non-product links
-                        if any(exclude in href for exclude in ['lista.mercadolivre', 'search', 'category']):
-                            continue
+                        # if any(exclude in href for exclude in ['lista.mercadolivre', 'search', 'category']):
+                        #     continue
                         links.append(href)
             
             # Remove duplicates while preserving order
@@ -630,7 +630,7 @@ def main():
     MAX_PAGES = 1  # Limit pages to avoid being blocked
     
     # Initialize and run scraper
-    scraper = HPProductScraperV2(headless=True)
+    scraper = HPProductScraperV2(headless=False)
     
     try:
         scraper.run_scraping(SEARCH_TERMS, MAX_PAGES)
