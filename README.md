@@ -14,6 +14,17 @@ O projeto está organizado na seguinte estrutura de pastas:
 ├── misc/                # Arquivos diversos (READMEs específicos, todo.md, etc.)
 ├── notebooks/           # Jupyter Notebooks (IPYNB e HTML) para EDA e ML Pipeline
 ├── presentations/       # Apresentações (HTML) geradas
+├── production_api/      # API de Produção completa (Sprint 3)
+│   ├── app/                    # Aplicação Flask principal
+│   │   ├── api/               # Endpoints REST
+│   │   ├── services/          # Serviços de negócio (ML, scraping, etc.)
+│   │   ├── utils/             # Utilitários (database, logging)
+│   │   └── models.py          # Modelos de database
+│   ├── config/                # Configurações por ambiente
+│   ├── tests/                 # Testes unitários e de integração
+│   ├── run_api.py             # Servidor principal
+│   ├── init_db.py             # Inicialização do database
+│   └── requirements.txt       # Dependências da API
 ├── reports/             # Relatórios (Markdown e PDF)
 ├── scripts/             # Scripts Python (scrapers, limpeza, EDA, rotulagem, etc.)
 ├── src/                 # Pipeline de Machine Learning modular (Sprint 3)
@@ -241,9 +252,9 @@ pnpm run dev
 
 *Nota: Certifique-se de que o backend esteja rodando antes de iniciar o frontend, pois o frontend consome a API do backend.*
 
-## 🤖 Sprint 3: Pipeline de Machine Learning
+## 🤖 Sprint 3: Pipeline de Machine Learning e API de Produção
 
-**Descrição:** Pipeline completo de Machine Learning para classificação automática de produtos HP como "original" ou "suspeito/pirata" usando técnicas avançadas de feature engineering, múltiplos algoritmos de ML, otimização de hiperparâmetros e interpretabilidade de modelos.
+**Descrição:** Pipeline completo de Machine Learning para classificação automática de produtos HP como "original" ou "suspeito/pirata" usando técnicas avançadas de feature engineering, múltiplos algoritmos de ML, otimização de hiperparâmetros e interpretabilidade de modelos. Inclui também uma API de produção completa para deploy e uso em tempo real do sistema de classificação.
 
 ### Arquitetura do Pipeline ML
 
@@ -397,6 +408,252 @@ src/
 
 *Nota: Para documentação detalhada do pipeline ML, consulte `src/README.md`.*
 
+## 🚀 API de Produção para Classificação HP
+
+**Descrição:** Sistema completo de produção que integra o pipeline de ML em uma API REST robusta, com scraping automatizado, classificação em tempo real, monitoramento de sistema e interface web para gestão e visualização.
+
+### Arquitetura da API de Produção
+
+```
+Web Scraping → Database Storage → ML Classification → REST API → Web Interface
+     ↓              ↓                    ↓              ↓           ↓
+Cron Jobs → Product Storage → Batch Processing → API Endpoints → Dashboard
+```
+
+### Componentes Principais
+
+#### 🔧 Core Services (`production_api/app/services/`)
+- **ML Service**: Carregamento e gestão de modelos treinados
+- **Classification Service**: Classificação de produtos com explicações
+- **Scraper Service**: Coleta automatizada de dados do Mercado Livre
+- **Batch Processor**: Processamento em lote de produtos
+- **Feature Service**: Engenharia de features em tempo real
+- **Health Service**: Monitoramento de saúde do sistema
+- **Performance Service**: Métricas e analytics de performance
+
+#### 🗄️ Database Models (`production_api/app/models.py`)
+- **Product**: Armazenamento de dados de produtos
+- **Classification**: Resultados de classificação com confiança
+- **ScrapingJob**: Histórico e status de jobs de scraping
+- **SystemHealth**: Métricas de saúde e performance do sistema
+
+#### 🌐 REST API Endpoints (`production_api/app/api/routes.py`)
+- `POST /api/classify` - Classificação de produto individual
+- `GET /api/products` - Listagem de produtos com filtros
+- `GET /api/products/{id}` - Detalhes de produto específico
+- `GET /api/health` - Status de saúde do sistema
+- `GET /api/metrics` - Métricas de performance
+
+#### ⚙️ Configuration & Deployment
+- **Environment Management**: Configurações por ambiente (dev/prod)
+- **Database Migration**: Scripts de migração e inicialização
+- **Cron Jobs**: Agendamento automático de scraping
+- **Docker Support**: Containerização para deploy
+
+### Dependências da API de Produção
+
+**Principais bibliotecas:**
+- `Flask` - Framework web
+- `SQLAlchemy` - ORM para database
+- `Flask-CORS` - Suporte a CORS
+- `APScheduler` - Agendamento de tarefas
+- `psycopg2` - Driver PostgreSQL
+- `selenium` - Web scraping
+- `scikit-learn` - Modelos ML
+- `pandas`, `numpy` - Processamento de dados
+
+**Instalação:**
+
+```bash
+cd production_api/
+pip install -r requirements.txt
+```
+
+### Como Rodar a API de Produção
+
+#### 1. Configuração do Ambiente
+
+```bash
+cd production_api/
+
+# Copie o arquivo de configuração de exemplo
+cp config/.env.example config/.env.local
+
+# Edite as configurações conforme necessário
+# DATABASE_URL, SECRET_KEY, etc.
+```
+
+#### 2. Inicialização do Database
+
+```bash
+# Inicialize o banco de dados
+python init_db.py
+
+# Execute migrações (se necessário)
+python migrate_db.py
+```
+
+#### 3. Execução da API
+
+```bash
+# Modo desenvolvimento
+python run_api.py
+
+# Ou com configurações específicas
+FLASK_ENV=development python run_api.py
+```
+
+#### 4. Configuração de Jobs Automatizados
+
+```bash
+# Configure cron jobs para scraping automático
+python setup_cron.py
+
+# Ou execute scraping manual
+python run_scraper.py
+```
+
+#### 5. Deploy em Produção
+
+```bash
+# Use o script de deploy
+python deploy.py
+
+# Ou com Docker (se disponível)
+docker-compose up -d
+```
+
+### Funcionalidades da API de Produção
+
+#### 🔍 Classificação em Tempo Real
+- **Endpoint de Classificação**: Classifica produtos instantaneamente
+- **Batch Processing**: Processa múltiplos produtos em lote
+- **Confidence Scoring**: Scores de confiança para cada predição
+- **Explicações Detalhadas**: Reasoning por trás de cada classificação
+
+#### 🕷️ Scraping Automatizado
+- **Cron Jobs**: Coleta automática de dados em intervalos regulares
+- **Error Handling**: Recuperação automática de falhas
+- **Data Validation**: Validação e limpeza de dados coletados
+- **Duplicate Detection**: Prevenção de dados duplicados
+
+#### 📊 Monitoramento e Analytics
+- **Health Checks**: Monitoramento contínuo de componentes
+- **Performance Metrics**: Métricas de latência, throughput e accuracy
+- **System Alerts**: Alertas automáticos para problemas
+- **Usage Analytics**: Estatísticas de uso da API
+
+#### 🗃️ Gestão de Dados
+- **Product Management**: CRUD completo para produtos
+- **Classification History**: Histórico completo de classificações
+- **Data Export**: Exportação de dados em múltiplos formatos
+- **Backup & Recovery**: Sistemas de backup automático
+
+### Endpoints da API
+
+#### Classificação de Produtos
+```bash
+# Classificar um produto
+curl -X POST http://localhost:5000/api/classify \
+  -H "Content-Type: application/json" \
+  -d '{
+    "title": "Cartucho HP 664 Original",
+    "description": "Cartucho original HP",
+    "price": 89.90,
+    "seller_name": "HP Store Oficial",
+    "rating": 4.8,
+    "reviews_count": 150
+  }'
+```
+
+#### Listagem de Produtos
+```bash
+# Listar produtos com filtros
+curl "http://localhost:5000/api/products?prediction=original&limit=10&page=1"
+
+# Filtrar por confiança
+curl "http://localhost:5000/api/products?min_confidence=0.8"
+```
+
+#### Monitoramento
+```bash
+# Status de saúde
+curl "http://localhost:5000/api/health"
+
+# Métricas de performance
+curl "http://localhost:5000/api/metrics"
+```
+
+### Testes da API de Produção
+
+#### Testes Unitários
+```bash
+cd production_api/tests/
+
+# Execute todos os testes
+pytest -v
+
+# Testes específicos
+pytest test_ml_service.py -v
+pytest test_classification_service.py -v
+pytest test_api_routes.py -v
+```
+
+#### Testes de Integração
+```bash
+# Testes end-to-end
+pytest test_integration.py -v
+
+# Testes de database
+pytest test_database_integration.py -v
+
+# Testes de API
+pytest test_api_integration.py -v
+```
+
+#### Validação de Estrutura
+```bash
+# Validar estrutura dos testes
+python tests/validate_integration_tests.py
+
+# Runner de testes integrado
+python tests/test_integration_runner.py
+```
+
+### Arquivos Principais da API
+
+```
+production_api/
+├── app/
+│   ├── __init__.py              # Factory da aplicação Flask
+│   ├── models.py                # Modelos de database
+│   ├── api/routes.py            # Endpoints REST
+│   ├── services/                # Serviços de negócio
+│   └── utils/                   # Utilitários
+├── config/
+│   ├── config.py                # Configurações por ambiente
+│   ├── .env.example             # Template de variáveis
+│   └── factory.py               # Factory de configuração
+├── tests/
+│   ├── test_integration.py      # Testes end-to-end
+│   ├── test_api_integration.py  # Testes de API
+│   └── conftest.py              # Configuração pytest
+├── run_api.py                   # Servidor principal
+├── init_db.py                   # Inicialização database
+├── setup_cron.py                # Configuração cron jobs
+└── requirements.txt             # Dependências
+```
+
+### Métricas de Performance da API
+
+- **Latência de Classificação**: <200ms por produto
+- **Throughput**: >100 classificações/minuto
+- **Uptime**: >99.5% disponibilidade
+- **Accuracy**: >85% precisão nas classificações
+- **Scraping Rate**: >1000 produtos/hora
+
+*Nota: Para documentação detalhada da API, consulte `production_api/README.md` e `production_api/DEPLOYMENT.md`.*
+
 ## 🏁 Como Rodar o Projeto Completo (Passo a Passo)
 
 Para rodar o projeto completo do zero, siga os passos abaixo na ordem:
@@ -430,7 +687,7 @@ Para rodar o projeto completo do zero, siga os passos abaixo na ordem:
    - **Backend:** Siga as instruções de instalação e execução do backend (`backend/hp_observability_backend`).
    - **Frontend:** Siga as instruções de instalação e execução do frontend (`hp-observability-frontend`).
 
-### Sprint 3: Pipeline de Machine Learning
+### Sprint 3: Pipeline de Machine Learning e API de Produção
 
 7. **Pipeline de Machine Learning:**
    - **Instalação das dependências ML:**
@@ -446,13 +703,51 @@ Para rodar o projeto completo do zero, siga os passos abaixo na ordem:
    
    - **Ou execute módulos individuais conforme necessário (ver seção Sprint 3 acima)**
 
-8. **Testes e Validação (Opcional mas Recomendado):**
+8. **API de Produção:**
+   - **Instalação das dependências da API:**
+     ```bash
+     cd production_api/
+     pip install -r requirements.txt
+     ```
+   
+   - **Configuração do ambiente:**
+     ```bash
+     cp config/.env.example config/.env.local
+     # Edite config/.env.local com suas configurações
+     ```
+   
+   - **Inicialização do database:**
+     ```bash
+     python init_db.py
+     ```
+   
+   - **Execução da API:**
+     ```bash
+     python run_api.py
+     ```
+     *A API estará disponível em `http://localhost:5000`*
+   
+   - **Configuração de scraping automático (opcional):**
+     ```bash
+     python setup_cron.py
+     ```
+
+9. **Testes e Validação (Opcional mas Recomendado):**
+   
+   **Testes do Pipeline ML:**
    ```bash
    python notebooks/test_preprocessing.py
    python notebooks/test_hyperparameter_pipeline.py
    python notebooks/test_validation.py
    python notebooks/test_interpretation.py
    python notebooks/test_model_recommendation.py
+   ```
+   
+   **Testes da API de Produção:**
+   ```bash
+   cd production_api/tests/
+   pytest -v
+   python test_integration_runner.py
    ```
 
 ### Resultado Final
@@ -463,8 +758,10 @@ Ao final, você terá:
 - **Análise exploratória completa** com insights e visualizações (Sprint 2)
 - **Plataforma de observabilidade** rodando em `http://localhost:5173` (Sprint 2)
 - **Pipeline de ML completo** com modelos treinados, otimizados e prontos para produção (Sprint 3)
+- **API de produção** rodando em `http://localhost:5000` com classificação em tempo real (Sprint 3)
+- **Sistema de scraping automatizado** com cron jobs e monitoramento (Sprint 3)
 - **Relatórios técnicos e executivos** com recomendações de modelos (Sprint 3)
-- **Sistema de classificação automática** de produtos HP por autenticidade (Sprint 3)
+- **Sistema completo de classificação automática** de produtos HP por autenticidade (Sprint 3)
 
 ## 🎯 Objetivos Alcançados
 
@@ -484,14 +781,29 @@ Ao final, você terá:
 - Sistema de recomendação inteligente de modelos
 - Interpretabilidade e explicabilidade completas
 - Relatórios técnicos e executivos automatizados
+- **API de produção completa** com REST endpoints
+- **Sistema de scraping automatizado** com cron jobs
+- **Monitoramento e health checks** em tempo real
+- **Testes de integração abrangentes** (end-to-end, database, API)
+- **Deploy ready** com configurações de produção
 
 ## 📊 Métricas de Sucesso
 
+### Pipeline de Machine Learning
 - **Cobertura de Dados**: >1000 produtos coletados e analisados
 - **Accuracy do Modelo**: >85% na classificação de autenticidade
 - **Tempo de Processamento**: <5 minutos para pipeline completo
 - **Interpretabilidade**: Explicações claras para 100% das predições
 - **Automação**: Pipeline totalmente automatizado do dado bruto ao modelo em produção
+
+### API de Produção
+- **Performance da API**: <200ms latência por classificação
+- **Throughput**: >100 classificações por minuto
+- **Disponibilidade**: >99.5% uptime
+- **Scraping Rate**: >1000 produtos coletados por hora
+- **Cobertura de Testes**: >90% cobertura de código com testes de integração
+- **Monitoramento**: Health checks e métricas em tempo real
+- **Escalabilidade**: Suporte a processamento em lote e cron jobs automatizados
 
 
 
